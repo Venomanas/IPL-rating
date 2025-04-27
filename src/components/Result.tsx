@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { useState } from "react";
 import { getRatings } from "@/lib/database";
@@ -24,7 +25,7 @@ export default function Result() {
 
 
   return (
-    <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+    <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md h-screen ">
       <h2 className="text-3xl font-bold text-center text-purple-600 mb-4">
         IPL Team Ratings
       </h2>

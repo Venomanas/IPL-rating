@@ -7,16 +7,16 @@ export default function page() {
   return (
     <div>
       <Header />
-      <main className="flex-grow p-6 bg-gray-100">
+      <main className="flex-grow p-6 bg-gray-100 min-h-screen w-full">
         <h2 className="text-3xl font-bold text-center text-purple-600 mb-4">
           IPL Team Rating System
         </h2>
-        <p className="text-center text-gray-600 mb-8">
+        <p className="text-center text-gray-600 mb-8 bg-purple-100">
           Rate teams on a scale of 1-10. View results securely with a private
           key.
         </p>
         <div className="flex justify-center space-x-4">
-          <div className="bg-white p-6 rounded-lg shadow-md w-80">
+          <div className="bg-white p-6 rounded-lg shadow-md w-80 mb-6">
             <div className="flex justify-center mb-4">
               <svg
                 className="w-10 h-10 text-purple-500"
@@ -47,7 +47,7 @@ export default function page() {
               Rate Now
             </Link>
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md w-80">
+          <div className="bg-white p-6 rounded-lg shadow-md w-80 mb-6">
             <div className="flex justify-center mb-4">
               <svg
                 className="w-10 h-10 text-blue-500"
@@ -86,24 +86,24 @@ export default function page() {
           </div>
         </div>
         <div className="bg-gradient-to-r from-purple-600 to-blue-600 text-white p-6 mt-8 rounded-lg">
-          <h3 className="text-2xl font-bold text-center mb-4">How It Works</h3>
-          <div className="flex justify-around">
+          <h3 className="text-2xl font-bold text-center mb-4">How It Works ?</h3>
+          <div className="flex justify-around p-6 m-2 ">
             <div className="text-center">
-              <div className="bg-white text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-2">
+              <div className="bg-white text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-2 font-bold">
                 1
               </div>
               <p>Select a Team</p>
               <p className="text-sm">Choose a team to rate from the list.</p>
             </div>
             <div className="text-center">
-              <div className="bg-white text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-2">
+              <div className="bg-white text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-2 font-bold">
                 2
               </div>
               <p>Submit Rating</p>
               <p className="text-sm">Rate on a scale of 1-10 and submit.</p>
             </div>
             <div className="text-center">
-              <div className="bg-white text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-2">
+              <div className="bg-white text-purple-600 rounded-full w-10 h-10 flex items-center justify-center mx-auto mb-2 font-bold">
                 3
               </div>
               <p>View Results</p>

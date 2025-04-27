@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+'use client'
+import React , { useState } from 'react'
 import { addRating, getTeams } from '@/lib/database'
 import { Team } from '@/types'
 
@@ -20,12 +21,12 @@ export default function RateTeam() {
     }
 
   return (
-   <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md">
+   <div className="max-w-md mx-auto bg-white p-6 rounded-lg shadow-md h-svh ">
       <h2 className="text-3xl font-bold text-center text-purple-600 mb-4">Rate an IPL Team</h2>
       <p className="text-center text-gray-600 mb-8">Select a team and provide your rating</p>
       
       {message && <p className="text-green-600 text-center mb-4">{message}</p>}
-      <div className="mb-4">
+      <div className="mb-4 ">
         <label className="block text-gray-700 mb-2">Select Team</label>
         <select
           value={selectedTeam}
@@ -37,7 +38,7 @@ export default function RateTeam() {
           ))}
         </select>
       </div>
-      <div className="mb-4">
+      <div className="mb-10 p-2 mt-10 ">
         <label className="block text-gray-700 mb-2">Rating (1-10)</label>
         <div className="flex space-x-2 justify-center">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num: number) => (
@@ -53,7 +54,7 @@ export default function RateTeam() {
           ))}
         </div>
       </div>
-      <div className="mb-4">
+      <div className="mb-10 p-2  ">
         <label className="block text-gray-700 mb-2">Comment (Optional)</label>
         <textarea
           value={comment}
